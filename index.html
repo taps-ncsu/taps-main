@@ -79,9 +79,6 @@ TAPS 2022 will be hosted on November 4th, 2020 at  NCSU. The even takes place in
     <div>
     <h5>01:00 -  02:00 <a href='https://www.kapravelos.com'> Alex Kapravelos (NCSU)</a> </h5>
 
-  <h4></h4>
-    <p></p>
-    </div> 
     
     
     <div>
@@ -128,8 +125,77 @@ TAPS 2022 will be hosted on November 4th, 2020 at  NCSU. The even takes place in
 </p>
     </div>
 
-    
+ <h2>Student Highlights</h2>
+        
+<div>
+        <h5>Sravya Yandamuri</h5>  
+        <h4>Efficient and Adaptively Secure Asynchronous Binary Agreement via Binding Crusader Agreement</h4>
+        <p>We present a new abstraction based on crusader agreement called Binding Crusader Agreement (BCA) for solving binary consensus in the asynchronous setting against an adaptive adversary. BCA has the validity, agreement, and termination properties of crusader agreement in addition to a new property called binding. Binding states that before the first non-faulty party terminates, there is a value v in {0,1} such that no non-faulty party can output the value v in any continuation of the execution.
 
+We believe that reasoning about binding explicitly, as a first order goal, greatly helps algorithm design, clarity, and analysis. 
+
+Using our framework, we solve several versions of asynchronous binary agreement against an adaptive adversary in a simple and modular manner that either improves or matches the efficiency of state of the art solutions. We do this via new BCA protocols, given a strong common coin, and via new Graded BCA protocols given an epsilon-good common coin.
+
+For crash failures, we reduce the expected time to terminate and we provide termination bounds that are linear in the goodness of the common coin.
+
+For Byzantine failures, we improve the expected time to terminate in the computational setting with threshold signatures, and match the state of the art in the information theoretic setting,  
+both with a strong common coin and with an epsilon-good common coin.</p>
+    
+    <h5>Varun Madathil</h5>
+    <h4>Full Privacy for Account-based Cryptocurrencies</h4>
+    <p>The public visibility of cryptocurrency payments makes it imperative that these payments, although visible, must be private. Account-based cryptocurrencies (e.g., Ethereum) are based on updating user balances in a global mutable state and no techniques exist to achieve full privacy. Existing approaches to achieve privacy have fundamental limitations in the anonymity they provide.
+All existing designs for adding privacy to account-based cryptocurrencies require augmenting the size of a payment transaction from constant (two accounts per transaction) to linear in the anonymity set desired by the account holder. Concretely, this means that the maximum anonymity that an account holder can achieve is upper-bounded by the maximum number of accounts that can be included in the transaction, which is an extremely small fraction of all the existing accounts in the system. As a result, private cryptocurrencies that follow these approaches provide very weak anonymity guarantees.
+In this talk, we provide the first approach that guarantees full privacy in account-based cryptocurrencies using compact transactions. </p>
+    
+    <h5>Kai Yue</h5>
+    <h4>Gradient Obfuscation Gives a False Sense of Security in Federated Learning</h4>
+    <p>Federated learning has been proposed as a privacy-preserving
+machine learning framework that enables multiple clients to
+collaborate without sharing raw data. However, client privacy
+protection is not guaranteed by design in this framework.
+Prior work has shown that the gradient sharing strategies in
+federated learning can be vulnerable to data reconstruction
+attacks. In practice, though, clients may not transmit raw gradients
+considering the high communication cost or due to
+privacy enhancement requirements. Empirical studies have
+demonstrated that gradient obfuscation, including intentional
+obfuscation via gradient noise injection and unintentional obfuscation
+via gradient compression, can provide more privacy
+protection against reconstruction attacks. In this work, we
+present a new reconstruction attack framework targeting the
+image classification task in federated learning. We show how
+commonly adopted gradient postprocessing procedures, such
+as gradient quantization, gradient sparsification, and gradient
+perturbation may give a false sense of security in federated
+learning. Contrary to prior studies, we argue that privacy enhancement
+should not be treated as a byproduct of gradient
+compression. Additionally, we design a new method under
+the proposed framework to reconstruct images at the semantic
+level. We quantify the semantic privacy leakage and compare
+it with conventional image similarity scores. Our comparisons
+challenge the image data leakage evaluation schemes in the
+literature. The results emphasize the importance of revisiting
+and redesigning the privacy protection mechanisms for client
+data in existing federated learning algorithms.</p>
+    
+    <h5>Adam Humphries</h5>
+    <h4>TASE: Reducing Latency of Symbolic Execution with Transactional Memory</h4>
+    <p>We present the design and implementation of a tool
+called TASE that uses transactional memory to reduce the latency
+of symbolic-execution applications with small amounts of symbolic state. Execution paths are executed natively while operating
+on concrete values, and only when execution encounters symbolic
+values (or modeled functions) is native execution suspended and
+interpretation begun. Execution then returns to its native mode
+when symbolic values are no longer encountered. The key innovations in the design of TASE are a technique for amortizing the cost
+of checking whether values are symbolic over few instructions,
+and the use of hardware-supported transactional memory (TSX)
+to implement native execution that rolls back with no effect
+when use of a symbolic value is detected (perhaps belatedly).
+We show that TASE has the potential to dramatically improve
+some latency-sensitive applications of symbolic execution, such
+as methods to verify the behavior of a client in a client-server
+application.</p>
+    </div>
     
 
 
